@@ -10,10 +10,11 @@ while True:
                 salida=eval(entrada)
                 print("El resultado es:", + salida)
             except ValueError:
-                print("ERROR (ValueError)")
+                print("ERROR")
             except SyntaxError:
-                print("ERROR (SyntaxError)")
-            input()
+                print("ERROR")
+            except NameError:
+                print("ERROR")
         elif option == 2:
             print("F_calculatorNC es el sucesor de F_calculator tiene")
             print("mejor desempeño y menos errores.")
@@ -30,7 +31,7 @@ while True:
             system("cls")
             continue
         elif option == 2:
-            exit
+            exit() 
         else:
             print("ERROR: ELIJA UNA OPCIÓN VALIDA")
     except ValueError:
@@ -38,4 +39,3 @@ while True:
         print("Enter")
         input()
         system("cls")
-input()
